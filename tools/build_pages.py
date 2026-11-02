@@ -328,7 +328,7 @@ RXACCESS = {
   <div style="height:1rem"></div>
   <div class="grid2">
     {field('q-diagnosis', '1. Diagnosis (ICD-10)', 'K00.000')}
-    {select('q-severity', '2. Is the disease moderate to severe?', YES_NO)}
+    {select('q-severity', '2. Is the disease moderate to severe?', YES_NO + [('See attached letter', 'See attached letter of medical necessity')])}
     {field('q-specialty', '3. Prescriber specialty')}
     {select('q-urgency', '6. Standard or expedited review', [('Standard', 'Standard'), ('Expedited', 'Expedited')])}
   </div>
