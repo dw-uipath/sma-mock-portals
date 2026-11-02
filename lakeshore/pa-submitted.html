@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Request submitted | Lakeshore Health Plan</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-lakeshore" data-site="lakeshore" data-page="pa-submitted" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="search.html"><span class="mark">LHP</span><span>Lakeshore Health Plan<small>Provider portal</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="search.html" id="nav-search">Eligibility</a><a href="pa-new.html" id="nav-pa-new">New medical PA</a><a href="cases.html" id="nav-cases">Cases</a><a href="letters.html" id="nav-letters">Letters inbox</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <ol class="steps"><li class="">1 &middot; Request details</li><li class="">2 &middot; Documents</li><li class="on">3 &middot; Confirmation</li></ol>
+  <div class="alert ok" id="submission-banner">Request submitted. Keep the submission ID to check status.</div>
+  <div style="height:1rem"></div>
+  <dl class="facts"><dt>Submission ID</dt><dd id="submission-id"></dd><dt>Status</dt><dd id="submission-status"></dd><dt>Submitted (UTC)</dt><dd id="submitted-at"></dd><dt>Submitted (local)</dt><dd id="submitted-at-local"></dd><dt>Payer case number</dt><dd id="submission-case-number"></dd><dt>Member</dt><dd id="submission-member"></dd><dt>Service</dt><dd id="submission-service"></dd><dt>Urgency</dt><dd id="submission-urgency"></dd><dt>Response due by</dt><dd id="submission-due"></dd></dl>
+  <div class="actions"><a class="button" id="submission-view-case" href="cases.html">View case status</a>
+  <a class="button secondary" id="submission-new" href="pa-new.html">New request</a></div>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="lakeshore.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Question set | RxAccess ePA</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-rxaccess" data-site="rxaccess" data-page="questions" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="requests.html"><span class="mark">Rx</span><span>RxAccess ePA<small>Electronic prior authorization</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="new.html" id="nav-new">New request</a><a href="requests.html" id="nav-requests">Requests</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <ol class="steps"><li class="">1 &middot; Drug and patient</li><li class="on">2 &middot; Questions</li><li class="">3 &middot; Attachments</li><li class="">4 &middot; Submitted</li></ol>
+  <h1>Question set</h1>
+  <p class="lede" id="q-set-title"></p>
+  <div class="alert info" id="q-request-summary"></div>
+  <div style="height:1rem"></div>
+  <div class="grid2">
+    <div class="field"><label for="q-diagnosis">1. Diagnosis (ICD-10)</label><input type="text" id="q-diagnosis" name="q-diagnosis" autocomplete="off" placeholder="K00.000"></div>
+    <div class="field"><label for="q-severity">2. Is the disease moderate to severe?</label><select id="q-severity" name="q-severity"><option value="">Select</option><option value="Yes">Yes</option><option value="No">No</option></select></div>
+    <div class="field"><label for="q-specialty">3. Prescriber specialty</label><input type="text" id="q-specialty" name="q-specialty" autocomplete="off"></div>
+    <div class="field"><label for="q-urgency">6. Standard or expedited review</label><select id="q-urgency" name="q-urgency"><option value="Standard">Standard</option><option value="Expedited">Expedited</option></select></div>
+  </div>
+  <div class="field" style="margin-top:.9rem"><label for="q-conventional">4. Conventional therapy tried, and outcome</label><textarea id="q-conventional" name="q-conventional" rows="4"></textarea></div>
+  <h2 style="margin-top:1.1rem">5. Preferred biologic tried</h2>
+  <div class="grid3"><div class="field"><label for="q-biologic-name">Name</label><input type="text" id="q-biologic-name" name="q-biologic-name" autocomplete="off"></div><div class="field"><label for="q-biologic-dates">Dates</label><input type="text" id="q-biologic-dates" name="q-biologic-dates" autocomplete="off"></div><div class="field"><label for="q-biologic-outcome">Outcome</label><input type="text" id="q-biologic-outcome" name="q-biologic-outcome" autocomplete="off"></div></div>
+  <div class="actions"><a class="button secondary" href="new.html" id="q-back">Back</a>
+    <button type="button" id="q-continue">Continue to attachments</button></div>
+  <div class="alert error" id="q-error" role="alert" hidden></div>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="rxaccess.js"></script>
+</body>
+</html>

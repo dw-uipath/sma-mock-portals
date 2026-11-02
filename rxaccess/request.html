@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Request status | RxAccess ePA</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-rxaccess" data-site="rxaccess" data-page="request" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="requests.html"><span class="mark">Rx</span><span>RxAccess ePA<small>Electronic prior authorization</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="new.html" id="nav-new">New request</a><a href="requests.html" id="nav-requests">Requests</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card" id="rx-req-card" hidden>
+  <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:flex-start">
+    <div><h1>Request <span id="rx-req-id"></span></h1><p class="lede" id="rx-req-type"></p></div>
+    <span class="pill big-status" id="rx-req-status"></span>
+  </div>
+  <div class="alert warn" id="rx-req-clock-alert" hidden></div>
+  <dl class="facts"><dt>Patient</dt><dd id="rx-req-patient"></dd><dt>Member ID</dt><dd id="rx-req-member-id"></dd><dt>Plan / PBM</dt><dd id="rx-req-plan"></dd><dt>Drug</dt><dd id="rx-req-drug"></dd><dt>Submitted</dt><dd id="rx-req-submitted-at"></dd><dt>Plan response clock</dt><dd id="rx-req-clock"></dd><dt>Status checked</dt><dd id="rx-req-checked-at"></dd></dl>
+</section>
+<section class="card" id="rx-determination" hidden>
+  <h2>Determination</h2>
+  <dl class="facts"><dt>Decision</dt><dd id="rx-det-decision"></dd><dt>Decision date</dt><dd id="rx-det-date"></dd><dt>Authorization number</dt><dd id="rx-det-auth-number"></dd><dt>Drug</dt><dd id="rx-det-drug"></dd><dt>Quantity</dt><dd id="rx-det-quantity"></dd><dt>Valid from</dt><dd id="rx-det-valid-from"></dd><dt>Valid to</dt><dd id="rx-det-valid-to"></dd><dt>Dispensing requirement</dt><dd id="rx-det-dispense"></dd><dt>Reason</dt><dd id="rx-det-reason"></dd><dt>Letter</dt><dd id="rx-det-letter-name"></dd></dl>
+  <div class="actions"><a class="button" id="rx-letter-link" href="#" download>Download determination letter</a>
+  <a class="button secondary" id="rx-det-appeal-link" href="appeal.html">Start appeal</a></div>
+</section>
+<section class="card" id="rx-history-card" hidden>
+  <h2>Status history</h2>
+  <table class="list"><thead><tr><th>When</th><th>Status</th><th>Note</th></tr></thead><tbody id="rx-req-history"></tbody></table>
+</section>
+<section class="card" id="rx-req-not-found" hidden>
+  <h1>No request found</h1>
+  <p>No request matches <strong id="rx-req-not-found-id"></strong>.</p>
+  <a class="button secondary" href="requests.html" id="rx-req-back">Back to requests</a>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="rxaccess.js"></script>
+</body>
+</html>

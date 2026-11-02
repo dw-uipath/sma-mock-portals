@@ -1,0 +1,5 @@
+DEMO-LOGINS.local.md
+*.local.md
+node_modules/
+test-results/
+.DS_Store

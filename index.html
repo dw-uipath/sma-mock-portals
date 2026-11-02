@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SMA mock portals</title>
+<link rel="stylesheet" href="assets/portal.css">
+</head>
+<body class="site-hub">
+<header class="topbar"><div class="inner"><span class="brand"><span class="mark">SMA</span><span>Specialty Medication Access<small>Mock payer and program sites</small></span></span></div></header>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <h1>Mock sites for the Specialty Medication Access demo</h1>
+  <p class="lede">Three small static sites that UiPath robots work in the demo. Outcomes are scripted by member ID and
+  submission ID; nothing is stored on a server, so a new submission restarts its scripted path. Sign-ins live in
+  Orchestrator credential assets.</p>
+  <table class="list"><thead><tr><th>Site</th><th>Used for</th><th>Reset</th></tr></thead><tbody>
+    <tr><td><a href="lakeshore/" id="hub-lakeshore">Lakeshore Health Plan provider portal</a></td><td>Eligibility, medical PA, letters, appeals</td><td><a href="lakeshore/reset.html" id="hub-lakeshore-reset">Reset</a></td></tr>
+    <tr><td><a href="rxaccess/" id="hub-rxaccess">RxAccess ePA portal</a></td><td>Pharmacy PA question set and determinations</td><td><a href="rxaccess/reset.html" id="hub-rxaccess-reset">Reset</a></td></tr>
+    <tr><td><a href="savings/" id="hub-savings">Patient Savings enrollment site</a></td><td>Copay program enrollment</td><td><a href="savings/reset.html" id="hub-savings-reset">Reset</a></td></tr>
+  </tbody></table>
+</section>
+<section class="card">
+  <h2>Scripted outcomes</h2>
+  <ul>
+    <li>Member LKS884210377 (hero): medical PA Pending, then Denied with the denial letter; appeal Pending, then approved with the appeal letter; pen ePA Pending, then Approved with the approval letter.</li>
+    <li>A new submission shows Pending for 3 minutes, then its scripted outcome.</li>
+    <li>Member LKS000000000: coverage terminated 06/30/2026.</li>
+    <li>Medicare or Medicaid members on the savings site: not eligible, with a foundation referral.</li>
+    <li>Filler case F3 (Prairie State Medicaid) stays Pending on RxAccess past 80% of its 24-hour clock.</li>
+  </ul>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+</body>
+</html>

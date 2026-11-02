@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Attachments | RxAccess ePA</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-rxaccess" data-site="rxaccess" data-page="attachments" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="requests.html"><span class="mark">Rx</span><span>RxAccess ePA<small>Electronic prior authorization</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="new.html" id="nav-new">New request</a><a href="requests.html" id="nav-requests">Requests</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <ol class="steps"><li class="">1 &middot; Drug and patient</li><li class="">2 &middot; Questions</li><li class="on">3 &middot; Attachments</li><li class="">4 &middot; Submitted</li></ol>
+  <h1>Attachments</h1>
+  <div class="alert info" id="rx-attach-summary"></div>
+  <div class="field" style="margin-top:.9rem"><label for="rx-letter">Letter of medical necessity</label><textarea id="rx-letter" name="rx-letter" rows="12"></textarea></div>
+  <div class="field" style="margin-top:.9rem"><label for="rx-attachment-list">Clinical documents attached</label><textarea id="rx-attachment-list" name="rx-attachment-list" rows="4" placeholder="One document per line"></textarea></div>
+  <div class="field" style="margin-top:.9rem"><label for="rx-file">Upload files (optional)</label>
+    <input type="file" id="rx-file" multiple><span class="hint" id="rx-file-list"></span></div>
+  <div class="actions"><a class="button secondary" href="questions.html" id="rx-attach-back">Back</a>
+    <button type="button" id="rx-submit">Submit request</button></div>
+  <div class="alert error" id="rx-attach-error" role="alert" hidden></div>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="rxaccess.js"></script>
+</body>
+</html>

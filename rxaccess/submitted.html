@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Request submitted | RxAccess ePA</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-rxaccess" data-site="rxaccess" data-page="submitted" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="requests.html"><span class="mark">Rx</span><span>RxAccess ePA<small>Electronic prior authorization</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="new.html" id="nav-new">New request</a><a href="requests.html" id="nav-requests">Requests</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <ol class="steps"><li class="">1 &middot; Drug and patient</li><li class="">2 &middot; Questions</li><li class="">3 &middot; Attachments</li><li class="on">4 &middot; Submitted</li></ol>
+  <div class="alert ok">Request sent to the plan. Use the request ID to check status.</div>
+  <div style="height:1rem"></div>
+  <dl class="facts"><dt>Request ID</dt><dd id="rx-submission-id"></dd><dt>Status</dt><dd id="rx-submission-status"></dd><dt>Submitted (UTC)</dt><dd id="rx-submitted-at"></dd><dt>Submitted (local)</dt><dd id="rx-submitted-at-local"></dd><dt>Drug</dt><dd id="rx-submission-drug"></dd><dt>Patient</dt><dd id="rx-submission-patient"></dd><dt>Plan / PBM</dt><dd id="rx-submission-plan"></dd><dt>Urgency</dt><dd id="rx-submission-urgency"></dd><dt>Response due by</dt><dd id="rx-submission-due"></dd></dl>
+  <div class="actions"><a class="button" id="rx-view-request" href="requests.html">View request</a>
+  <a class="button secondary" id="rx-new-request" href="new.html">New request</a></div>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="rxaccess.js"></script>
+</body>
+</html>

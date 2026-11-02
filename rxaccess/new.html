@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>New request | RxAccess ePA</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-rxaccess" data-site="rxaccess" data-page="new" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="requests.html"><span class="mark">Rx</span><span>RxAccess ePA<small>Electronic prior authorization</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="new.html" id="nav-new" aria-current="page">New request</a><a href="requests.html" id="nav-requests">Requests</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <ol class="steps"><li class="on">1 &middot; Drug and patient</li><li class="">2 &middot; Questions</li><li class="">3 &middot; Attachments</li><li class="">4 &middot; Submitted</li></ol>
+  <h1>New ePA request</h1>
+  <form id="rx-drug-form">
+    <div class="grid2"><div class="field"><label for="rx-drug-query">Drug</label><input type="text" id="rx-drug-query" name="rx-drug-query" autocomplete="off" placeholder="Search by drug name"></div></div>
+    <div class="actions"><button type="submit" id="rx-drug-search">Search drugs</button></div>
+  </form>
+  <div class="drug-results" id="rx-drug-results"></div>
+  <div class="alert warn" id="rx-drug-note" hidden></div>
+</section>
+<section class="card">
+  <h2>Patient</h2>
+  <div class="grid2">
+    <div class="field"><label for="rx-patient-first">First name</label><input type="text" id="rx-patient-first" name="rx-patient-first" autocomplete="off"></div><div class="field"><label for="rx-patient-last">Last name</label><input type="text" id="rx-patient-last" name="rx-patient-last" autocomplete="off"></div>
+    <div class="field"><label for="rx-patient-dob">Date of birth</label><input type="text" id="rx-patient-dob" name="rx-patient-dob" autocomplete="off" placeholder="MM/DD/YYYY"></div><div class="field"><label for="rx-member-id">Member ID</label><input type="text" id="rx-member-id" name="rx-member-id" autocomplete="off"></div>
+  </div>
+</section>
+<section class="card">
+  <h2>Prescriber</h2>
+  <div class="grid2"><div class="field"><label for="rx-prescriber-name">Prescriber name</label><input type="text" id="rx-prescriber-name" name="rx-prescriber-name" autocomplete="off"></div><div class="field"><label for="rx-prescriber-npi">Prescriber NPI</label><input type="text" id="rx-prescriber-npi" name="rx-prescriber-npi" autocomplete="off" placeholder="10 digits"></div></div>
+</section>
+<section class="card">
+  <h2>Pharmacy benefit</h2>
+  <div class="grid3"><div class="field"><label for="rx-bin">BIN</label><input type="text" id="rx-bin" name="rx-bin" autocomplete="off"></div><div class="field"><label for="rx-pcn">PCN</label><input type="text" id="rx-pcn" name="rx-pcn" autocomplete="off"></div><div class="field"><label for="rx-group">Rx group</label><input type="text" id="rx-group" name="rx-group" autocomplete="off"></div></div>
+  <div class="actions"><button type="button" id="rx-continue">Continue to questions</button></div>
+  <div class="alert error" id="rx-new-error" role="alert" hidden></div>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="rxaccess.js"></script>
+</body>
+</html>

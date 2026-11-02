@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Eligibility result | Lakeshore Health Plan</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-lakeshore" data-site="lakeshore" data-page="eligibility" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="search.html"><span class="mark">LHP</span><span>Lakeshore Health Plan<small>Provider portal</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="search.html" id="nav-search">Eligibility</a><a href="pa-new.html" id="nav-pa-new">New medical PA</a><a href="cases.html" id="nav-cases">Cases</a><a href="letters.html" id="nav-letters">Letters inbox</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card" id="elig-card" hidden>
+  <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:flex-start">
+    <div><h1 id="elig-member-name"></h1>
+    <p class="lede">Eligibility response <span id="elig-reference"></span> &middot; checked <span id="elig-checked-at"></span></p></div>
+    <span class="pill big-status" id="elig-status"></span>
+  </div>
+  <div class="alert" id="elig-status-detail"></div>
+  <div style="height:1rem"></div>
+  <dl class="facts"><dt>Member ID</dt><dd id="elig-member-id"></dd><dt>Date of birth</dt><dd id="elig-dob"></dd><dt>Plan</dt><dd id="elig-plan"></dd><dt>Coverage type</dt><dd id="elig-coverage-type"></dd><dt>Employer group</dt><dd id="elig-employer"></dd><dt>Group number</dt><dd id="elig-group"></dd><dt>Coverage effective</dt><dd id="elig-effective"></dd><dt>Coverage end</dt><dd id="elig-end"></dd><dt>Medical benefit</dt><dd id="elig-medical-benefit"></dd><dt>Pharmacy benefit</dt><dd id="elig-pharmacy-benefit"></dd><dt>PBM</dt><dd id="elig-pbm"></dd><dt>Rx BIN</dt><dd id="elig-rx-bin"></dd><dt>Rx PCN</dt><dd id="elig-rx-pcn"></dd><dt>Rx group</dt><dd id="elig-rx-group"></dd><dt>Payer phone numbers</dt><dd id="elig-phones"></dd></dl>
+  <div class="actions"><a class="button" id="elig-start-pa" href="pa-new.html">Start medical PA</a>
+  <a class="button secondary" id="elig-new-search" href="search.html">New search</a></div>
+</section>
+<section class="card" id="elig-not-found" hidden>
+  <h1>No member found</h1>
+  <p id="elig-not-found-text">No member matches that member ID and date of birth.</p>
+  <a class="button secondary" id="elig-back" href="search.html">Back to search</a>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="lakeshore.js"></script>
+</body>
+</html>

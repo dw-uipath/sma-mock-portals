@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Eligibility questions | Vedolizumab Patient Savings Program</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-savings" data-site="savings" data-page="eligibility" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="program.html"><span class="mark">VSP</span><span>Vedolizumab Patient Savings Program<small>Provider enrollment</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="program.html" id="nav-program">Enroll a patient</a><a href="foundation.html" id="nav-foundation">Foundation referral</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <ol class="steps"><li class="">1 &middot; Program</li><li class="on">2 &middot; Eligibility</li><li class="">3 &middot; Enrollment</li><li class="">4 &middot; Confirmation</li></ol>
+  <h1>Eligibility questions</h1>
+  <p class="lede">Vedolizumab Patient Savings Program</p>
+  <div class="grid2">
+    <div class="field"><label for="elig-resident">Is the patient a US resident?</label><select id="elig-resident" name="elig-resident"><option value="">Select</option><option value="Yes">Yes</option><option value="No">No</option></select></div>
+    <div class="field"><label for="elig-prescribed">Has the patient been prescribed vedolizumab?</label><select id="elig-prescribed" name="elig-prescribed"><option value="">Select</option><option value="Yes">Yes</option><option value="No">No</option></select></div>
+    <div class="field"><label for="elig-commercial">Does the patient have commercial (employer or private) insurance?</label><select id="elig-commercial" name="elig-commercial"><option value="">Select</option><option value="Yes">Yes</option><option value="No">No</option></select></div>
+    <div class="field"><label for="elig-government">Does the patient have Medicare, Medicaid, TRICARE, VA or any other federal or state health program coverage, even alongside commercial insurance?</label><select id="elig-government" name="elig-government"><option value="">Select</option><option value="Yes">Yes</option><option value="No">No</option></select></div>
+  </div>
+  <div class="actions"><a class="button secondary" href="program.html" id="elig-back">Back</a>
+    <button type="button" id="elig-continue">Continue</button></div>
+  <div class="alert error" id="elig-error" role="alert" hidden></div>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="savings.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Choose a program | Vedolizumab Patient Savings Program</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-savings" data-site="savings" data-page="program" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="program.html"><span class="mark">VSP</span><span>Vedolizumab Patient Savings Program<small>Provider enrollment</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="program.html" id="nav-program" aria-current="page">Enroll a patient</a><a href="foundation.html" id="nav-foundation">Foundation referral</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <ol class="steps"><li class="on">1 &middot; Program</li><li class="">2 &middot; Eligibility</li><li class="">3 &middot; Enrollment</li><li class="">4 &middot; Confirmation</li></ol>
+  <h1>Enroll a patient</h1>
+  <p class="lede">Choose the program the patient has consented to.</p>
+  <div class="stack" style="gap:.6rem">
+    <label class="check card" for="program-vsp"><input type="radio" name="program" id="program-vsp" value="vsp">
+      <span><strong>Vedolizumab Patient Savings Program</strong><br>Commercially insured patients pay $5 per pen fill or infusion;
+      the program pays the rest up to $20,000 a year (synthetic figures). <a href="Vedolizumab_Patient_Savings_Program_Terms.pdf" id="program-vsp-terms">Program terms</a></span></label>
+    <label class="check card" for="program-hpaf"><input type="radio" name="program" id="program-hpaf" value="hpaf">
+      <span><strong>Harbor Patient Aid Foundation</strong> (independent charity)<br>Referral information for patients with federal or
+      state program coverage, including Medicare. Applications go to the foundation directly.</span></label>
+  </div>
+  <div class="actions"><button type="button" id="program-continue">Continue</button></div>
+  <div class="alert error" id="program-error" role="alert" hidden></div>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="savings.js"></script>
+</body>
+</html>

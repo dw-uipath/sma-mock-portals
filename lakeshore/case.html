@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Case status | Lakeshore Health Plan</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-lakeshore" data-site="lakeshore" data-page="case" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="search.html"><span class="mark">LHP</span><span>Lakeshore Health Plan<small>Provider portal</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="search.html" id="nav-search">Eligibility</a><a href="pa-new.html" id="nav-pa-new">New medical PA</a><a href="cases.html" id="nav-cases">Cases</a><a href="letters.html" id="nav-letters">Letters inbox</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card" id="case-card" hidden>
+  <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:flex-start">
+    <div><h1>Case <span id="case-submission-id"></span></h1>
+    <p class="lede"><span id="case-type"></span> &middot; payer case number <span id="case-number"></span></p></div>
+    <span class="pill big-status" id="case-status"></span>
+  </div>
+  <dl class="facts"><dt>Member</dt><dd id="case-member"></dd><dt>Member ID</dt><dd id="case-member-id"></dd><dt>Service</dt><dd id="case-service"></dd><dt>Submitted</dt><dd id="case-submitted-at"></dd><dt>Payer response clock</dt><dd id="case-clock"></dd><dt>Status checked</dt><dd id="case-checked-at"></dd></dl>
+</section>
+<section class="card" id="case-rfi" hidden>
+  <h2>Information requested</h2>
+  <dl class="facts"><dt>Payer question</dt><dd id="case-payer-question"></dd><dt>Response due</dt><dd id="case-info-due"></dd><dt>Requested on</dt><dd id="case-info-date"></dd></dl>
+  <div class="actions"><a class="button secondary" id="case-rfi-letter-link" href="#" download>Download request letter</a></div>
+</section>
+<section class="card" id="case-determination" hidden>
+  <h2>Determination</h2>
+  <dl class="facts"><dt>Decision</dt><dd id="det-decision"></dd><dt>Decision date</dt><dd id="det-date"></dd><dt>Authorization number</dt><dd id="det-auth-number"></dd><dt>Payer reference</dt><dd id="det-reference"></dd><dt>Service</dt><dd id="det-service"></dd><dt>Site of care</dt><dd id="det-site-of-care"></dd><dt>Valid from</dt><dd id="det-valid-from"></dd><dt>Valid to</dt><dd id="det-valid-to"></dd><dt>Denial reason category</dt><dd id="det-reason-category"></dd><dt>Reason</dt><dd id="det-reason"></dd><dt>Policy</dt><dd id="det-policy"></dd><dt>Appeal deadline</dt><dd id="det-appeal-deadline"></dd><dt>Peer-to-peer</dt><dd id="det-peer-to-peer"></dd><dt>Reviewer</dt><dd id="det-reviewer"></dd><dt>Letter</dt><dd id="det-letter-name"></dd></dl>
+  <div class="actions"><a class="button" id="det-letter-link" href="#" download>Download determination letter</a>
+  <a class="button secondary" id="det-appeal-link" href="appeal.html">Start appeal</a></div>
+</section>
+<section class="card" id="case-history-card" hidden>
+  <h2>Status history</h2>
+  <table class="list"><thead><tr><th>When</th><th>Status</th><th>Note</th></tr></thead><tbody id="case-history"></tbody></table>
+</section>
+<section class="card" id="case-not-found" hidden>
+  <h1>No case found</h1>
+  <p>No case matches <strong id="case-not-found-id"></strong>. Check the submission ID and try again.</p>
+  <a class="button secondary" href="cases.html" id="case-back">Back to cases</a>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="lakeshore.js"></script>
+</body>
+</html>

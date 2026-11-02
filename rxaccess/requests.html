@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Requests | RxAccess ePA</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-rxaccess" data-site="rxaccess" data-page="requests" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="requests.html"><span class="mark">Rx</span><span>RxAccess ePA<small>Electronic prior authorization</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="new.html" id="nav-new">New request</a><a href="requests.html" id="nav-requests" aria-current="page">Requests</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <h1>Requests</h1>
+  <form id="rx-find-form">
+    <div class="grid2"><div class="field"><label for="rx-find-id">Find by request ID</label><input type="text" id="rx-find-id" name="rx-find-id" autocomplete="off" placeholder="RXA-..."></div></div>
+    <div class="actions"><button type="submit" id="rx-find-submit">Open request</button></div>
+    <div class="alert error" id="rx-find-error" role="alert" hidden></div>
+  </form>
+</section>
+<section class="card">
+  <h2>Open and recent requests</h2>
+  <table class="list"><thead><tr><th>Request ID</th><th>Patient</th><th>Drug</th><th>Plan</th><th>Submitted</th><th>Clock</th><th>Status</th></tr></thead>
+  <tbody id="rx-request-rows"></tbody></table>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="rxaccess.js"></script>
+</body>
+</html>

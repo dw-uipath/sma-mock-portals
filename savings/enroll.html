@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Enrollment form | Vedolizumab Patient Savings Program</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-savings" data-site="savings" data-page="enroll" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="program.html"><span class="mark">VSP</span><span>Vedolizumab Patient Savings Program<small>Provider enrollment</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="program.html" id="nav-program">Enroll a patient</a><a href="foundation.html" id="nav-foundation">Foundation referral</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <ol class="steps"><li class="">1 &middot; Program</li><li class="">2 &middot; Eligibility</li><li class="on">3 &middot; Enrollment</li><li class="">4 &middot; Confirmation</li></ol>
+  <h1>Enrollment form</h1>
+  <h2>Patient</h2>
+  <div class="grid3">
+    <div class="field"><label for="enroll-first">First name</label><input type="text" id="enroll-first" name="enroll-first" autocomplete="off"></div><div class="field"><label for="enroll-last">Last name</label><input type="text" id="enroll-last" name="enroll-last" autocomplete="off"></div><div class="field"><label for="enroll-dob">Date of birth</label><input type="text" id="enroll-dob" name="enroll-dob" autocomplete="off" placeholder="MM/DD/YYYY"></div>
+    <div class="field"><label for="enroll-address">Street address</label><input type="text" id="enroll-address" name="enroll-address" autocomplete="off"></div><div class="field"><label for="enroll-city">City</label><input type="text" id="enroll-city" name="enroll-city" autocomplete="off"></div><div class="field"><label for="enroll-state">State</label><input type="text" id="enroll-state" name="enroll-state" autocomplete="off"></div>
+    <div class="field"><label for="enroll-zip">ZIP</label><input type="text" id="enroll-zip" name="enroll-zip" autocomplete="off"></div><div class="field"><label for="enroll-phone">Phone</label><input type="text" id="enroll-phone" name="enroll-phone" autocomplete="off"></div>
+  </div>
+  <h2 style="margin-top:1.1rem">Insurance and prescriber</h2>
+  <div class="grid3">
+    <div class="field"><label for="enroll-member-id">Member ID</label><input type="text" id="enroll-member-id" name="enroll-member-id" autocomplete="off"></div><div class="field"><label for="enroll-bin">Rx BIN</label><input type="text" id="enroll-bin" name="enroll-bin" autocomplete="off"></div><div class="field"><label for="enroll-pcn">Rx PCN</label><input type="text" id="enroll-pcn" name="enroll-pcn" autocomplete="off"></div>
+    <div class="field"><label for="enroll-group">Rx group</label><input type="text" id="enroll-group" name="enroll-group" autocomplete="off"></div><div class="field"><label for="enroll-npi">Prescriber NPI</label><input type="text" id="enroll-npi" name="enroll-npi" autocomplete="off"></div>
+  </div>
+  <h2 style="margin-top:1.1rem">Consent</h2>
+  <label class="check" for="enroll-consent"><input type="checkbox" id="enroll-consent">
+    <span>The patient consents to enroll and to share the information above with the program administrator.</span></label>
+  <div class="grid3" style="margin-top:.6rem"><div class="field"><label for="enroll-consent-date">Consent date</label><input type="text" id="enroll-consent-date" name="enroll-consent-date" autocomplete="off" placeholder="MM/DD/YYYY"></div></div>
+  <div class="actions"><a class="button secondary" href="eligibility.html" id="enroll-back">Back</a>
+    <button type="button" id="enroll-submit">Submit enrollment</button></div>
+  <div class="alert error" id="enroll-error" role="alert" hidden></div>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="savings.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>New medical PA | Lakeshore Health Plan</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-lakeshore" data-site="lakeshore" data-page="pa-new" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="search.html"><span class="mark">LHP</span><span>Lakeshore Health Plan<small>Provider portal</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="search.html" id="nav-search">Eligibility</a><a href="pa-new.html" id="nav-pa-new" aria-current="page">New medical PA</a><a href="cases.html" id="nav-cases">Cases</a><a href="letters.html" id="nav-letters">Letters inbox</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <ol class="steps"><li class="on">1 &middot; Request details</li><li class="">2 &middot; Documents</li><li class="">3 &middot; Confirmation</li></ol>
+  <h1>New medical prior authorization</h1>
+  <p class="lede">Drugs and services billed to the medical benefit (HCPCS). Pharmacy-benefit drugs go through ePA.</p>
+  <form id="pa-form">
+    <div class="grid3">
+      <div class="field"><label for="pa-member-id">Member ID</label><input type="text" id="pa-member-id" name="pa-member-id" autocomplete="off" placeholder="LKS000000000"></div>
+      <div class="field"><label for="pa-prescriber-npi">Prescriber NPI</label><input type="text" id="pa-prescriber-npi" name="pa-prescriber-npi" autocomplete="off" placeholder="10 digits"></div>
+      <div class="field"><label for="pa-hcpcs">HCPCS code</label><input type="text" id="pa-hcpcs" name="pa-hcpcs" autocomplete="off" placeholder="J0000"></div>
+      <div class="field"><label for="pa-drug">Drug</label><input type="text" id="pa-drug" name="pa-drug" autocomplete="off"></div>
+      <div class="field"><label for="pa-dose">Dose</label><input type="text" id="pa-dose" name="pa-dose" autocomplete="off" placeholder="e.g. 300 mg"></div>
+      <div class="field"><label for="pa-doses">Number of doses</label><input type="text" id="pa-doses" name="pa-doses" autocomplete="off"></div>
+      <div class="field"><label for="pa-site-of-care">Site of care</label><input type="text" id="pa-site-of-care" name="pa-site-of-care" autocomplete="off"></div>
+      <div class="field"><label for="pa-icd10">ICD-10 diagnosis</label><input type="text" id="pa-icd10" name="pa-icd10" autocomplete="off" placeholder="K00.000"></div>
+      <div class="field"><label for="pa-urgency">Urgency</label><select id="pa-urgency" name="pa-urgency"><option value="Standard">Standard</option><option value="Expedited">Expedited</option></select></div>
+    </div>
+    <details id="pa-demo-controls" style="margin-top:1rem"><summary>Demo controls</summary>
+      <div style="max-width:380px;margin-top:.5rem"><div class="field"><label for="pa-demo-scenario">Scripted path</label><select id="pa-demo-scenario" name="pa-demo-scenario"><option value="standard">Standard scripted outcome</option><option value="rfi">Add an information request before the outcome</option></select></div></div>
+    </details>
+    <div class="actions"><button type="submit" id="pa-continue">Continue to documents</button></div>
+    <div class="alert error" id="pa-error" role="alert" hidden></div>
+  </form>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="lakeshore.js"></script>
+</body>
+</html>

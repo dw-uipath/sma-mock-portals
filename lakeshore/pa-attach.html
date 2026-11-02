@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Supporting documents | Lakeshore Health Plan</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-lakeshore" data-site="lakeshore" data-page="pa-attach" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="search.html"><span class="mark">LHP</span><span>Lakeshore Health Plan<small>Provider portal</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="search.html" id="nav-search">Eligibility</a><a href="pa-new.html" id="nav-pa-new">New medical PA</a><a href="cases.html" id="nav-cases">Cases</a><a href="letters.html" id="nav-letters">Letters inbox</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <ol class="steps"><li class="">1 &middot; Request details</li><li class="on">2 &middot; Documents</li><li class="">3 &middot; Confirmation</li></ol>
+  <h1>Supporting documents</h1>
+  <div class="alert info" id="pa-summary"></div>
+  <div class="field" style="margin-top:.9rem"><label for="pa-letter">Letter of medical necessity</label><textarea id="pa-letter" name="pa-letter" rows="12"></textarea><span class="hint">Paste the signed letter, or upload it below.</span></div>
+  <div class="field" style="margin-top:.9rem"><label for="pa-attachment-list">Clinical documents attached</label><textarea id="pa-attachment-list" name="pa-attachment-list" rows="4" placeholder="One document per line"></textarea></div>
+  <div class="field" style="margin-top:.9rem"><label for="pa-file">Upload files (optional)</label>
+    <input type="file" id="pa-file" multiple><span class="hint" id="pa-file-list"></span></div>
+  <div class="actions"><a class="button secondary" id="pa-back" href="pa-new.html">Back</a>
+    <button type="button" id="pa-submit">Submit request</button></div>
+  <div class="alert error" id="pa-attach-error" role="alert" hidden></div>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="lakeshore.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Appeals | RxAccess ePA</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-rxaccess" data-site="rxaccess" data-page="appeal" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="requests.html"><span class="mark">Rx</span><span>RxAccess ePA<small>Electronic prior authorization</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="new.html" id="nav-new">New request</a><a href="requests.html" id="nav-requests">Requests</a><a href="appeal.html" id="nav-appeal" aria-current="page">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <h1>Submit a pharmacy appeal</h1>
+  <p class="lede">Appeal or redetermination request for a pharmacy-benefit prior authorization.</p>
+  <form id="rx-appeal-find-form">
+    <div class="grid2"><div class="field"><label for="rx-appeal-reference">Request ID or plan reference number</label><input type="text" id="rx-appeal-reference" name="rx-appeal-reference" autocomplete="off" placeholder="RXA-... or LKS-PA-26-..."></div></div>
+    <div class="actions"><button type="submit" id="rx-appeal-find">Find request</button></div>
+    <div class="alert error" id="rx-appeal-error" role="alert" hidden></div>
+  </form>
+  <div id="rx-appeal-details" hidden>
+    <div class="alert info" id="rx-appeal-summary"></div>
+    <div class="field" style="margin-top:.9rem"><label for="rx-appeal-letter">Appeal letter</label><textarea id="rx-appeal-letter" name="rx-appeal-letter" rows="12"></textarea></div>
+    <div class="field" style="margin-top:.9rem"><label for="rx-appeal-p2p">Peer-to-peer preparation (optional)</label><textarea id="rx-appeal-p2p" name="rx-appeal-p2p" rows="6"></textarea></div>
+    <div class="actions"><button type="button" id="rx-appeal-submit">Submit appeal</button></div>
+    <div class="alert error" id="rx-appeal-submit-error" role="alert" hidden></div>
+  </div>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="rxaccess.js"></script>
+</body>
+</html>

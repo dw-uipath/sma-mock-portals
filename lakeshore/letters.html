@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Letters inbox | Lakeshore Health Plan</title>
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body class="site-lakeshore" data-site="lakeshore" data-page="letters" data-auth="required">
+<header class="topbar"><div class="inner">
+  <a class="brand" id="brand" href="search.html"><span class="mark">LHP</span><span>Lakeshore Health Plan<small>Provider portal</small></span></a>
+  <nav class="mainnav" id="mainnav"><a href="search.html" id="nav-search">Eligibility</a><a href="pa-new.html" id="nav-pa-new">New medical PA</a><a href="cases.html" id="nav-cases">Cases</a><a href="letters.html" id="nav-letters" aria-current="page">Letters inbox</a><a href="appeal.html" id="nav-appeal">Appeals</a></nav>
+  <div class="userbox"><span>Signed in as <strong id="nav-user"></strong></span><a href="index.html" id="nav-logout">Sign out</a></div>
+</div></header>
+<div class="loading" id="loading" hidden>Loading&hellip;</div>
+<main id="main">
+<div class="stack">
+<section class="card">
+  <h1>Letters inbox</h1>
+  <p class="lede">Determination and information-request letters for your submissions.</p>
+  <form id="letters-search-form">
+    <div class="grid2"><div class="field"><label for="letters-search-id">Show letters for a submission ID</label><input type="text" id="letters-search-id" name="letters-search-id" autocomplete="off" placeholder="LKS-MPA-..."></div></div>
+    <div class="actions"><button type="submit" id="letters-search-submit">Find letters</button></div>
+    <div class="alert error" id="letters-search-error" role="alert" hidden></div>
+  </form>
+</section>
+<section class="card">
+  <table class="list"><thead><tr><th>Posted</th><th>Letter</th><th>Case</th><th>Member</th><th></th></tr></thead>
+  <tbody id="letters-rows"></tbody></table>
+  <p class="empty" id="letters-empty" hidden>No letters yet for submissions from this browser.</p>
+</section>
+</div>
+</main>
+<footer class="synthetic" id="synthetic-footer"><strong>SYNTHETIC DEMO DATA, NOT A REAL PATIENT</strong> &middot; Fictional payer, programs, people and numbers for UiPath demonstrations only. Not affiliated with any real organization.</footer>
+<script src="../assets/sma.js"></script>
+<script src="lakeshore.js"></script>
+</body>
+</html>
